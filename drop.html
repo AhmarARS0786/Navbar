@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Drop</title>
+ </head>
+   <style>
+     body {
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(build.jpg);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     
+}
+
+     ul {
+         float: right;
+         list-style-type: none;
+         margin-top: 25px;
+               
+        }
+
+      ul li {
+          display: inline-block;
+          
+       }
+       ul li a {
+           text-decoration: none;
+           color: #fff;
+           padding: 5px 20px;
+           border: 1px solid transparent;
+           transition: 0.6s ease ;
+        }
+        ul li a:hover {
+            background-color: #fff;
+            color: #000;
+            transition: 0.6s ease;
+          }
+          .logo img {
+            float: left;
+            width: 80px;
+            height: auto;
+            margin-top: 15px;
+          }
+          .mian {
+           max-width: 1200px;
+           margin: auto;
+
+          }
+       li a,
+       .dropbtn {
+           display: inline-block;
+           color: white;
+           text-align: center;
+           padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        ul li a:hover{ 
+         background-color: #fff;
+         color: #000;
+         }
+         ul li .active a {
+            background-color: #fff;
+         color: #000;
+        }
+        .dropdown-content {
+          display:none;
+          position: absolute;
+          background-color: rgb(243, 239, 239);
+          width: 160px;
+          box-shadow: 0px 10px 16px 0px rgba(246, 31, 12, 0.2);
+          z-index: 1;
+          }
+         .container:hover .overlay {
+            bottom: 0;
+            height: 100%;
+          }
+          .text {
+            color: white;
+           font-size: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+          }
+
+
+          
+          
+          .dropdown-content a {
+             color: black;
+             padding: 12px 16px;
+             text-decoration: none;
+             display: block;
+             text-align: left; 
+          }
+             
+          .dropdown-content a:hover {
+
+            background-color:rgb(255, 255, 255)
+          }
+          
+            .dropdown:hover .dropdown-content {
+                display: 150px;
+            }
+            .title{
+
+
+
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
+            .title h1 {
+              color: white;
+              font-size: 40px;
+            }
+            .button{
+              position: absolute;
+              top: 60%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
+            .btn {
+
+
+              border: 1px solid #fff;
+              padding: 10px 30px;
+              color: #fff;
+              text-decoration: none;
+              transition: 0.6s ease;
+            }
+            .button a:hover{ 
+         background-color: #fff;
+         color: #000;
+         }
+            .btn :hover {
+              
+              background-color: #fff;
+         color: #000;
+           }
+        
+  </style>
+ </head>
+<body>
+   
+     <div class="main">
+     <div class="logo">
+     <img src="Ars2.jpg">
+        
+   </div>
+   <ul>
+     <li class="active"> <a href="home.html">Home</a> </li>
+     <li> <a href="about us.html">About</a> </li>
+     <li class="dropdown">
+        <a class="dropbtn">Dropdown</a>
+     
+        <div class="dropdown-content">
+         <a href="#">Link 1</a>
+         <a href="#">Link 2</a>
+         <a href="#">Link 3</a>
+       </div>
+    </li>
+   </ul> 
+   <div class="title">
+      <h1>This Is My First Page Website.</h1>
+   </div>
+
+   <div class="button">
+      <a href="#" class="btn" >    Watch Video</a>
+      <a href="#" class="btn" > Learn More</a>
+
+   </div>
+    
+</body>
+</html>
